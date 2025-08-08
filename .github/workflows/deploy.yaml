@@ -34,6 +34,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: resume # The branch where the site will be deployed
+          branch: main # The branch where the site will be deployed
           folder: build # The folder containing the production-ready files
           token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
