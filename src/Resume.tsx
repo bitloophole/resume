@@ -66,7 +66,7 @@ const Resume = () => {
               className="list-disc pl-6 text-gray-700"
             >
               <div className="d-flex flex-wrap">
-                <div className="card card-shadow-strong d-flex ">
+                <div className="card card-shadow-strong">
                   <div className="flex items-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
@@ -99,7 +99,7 @@ const Resume = () => {
                     />
                     SCSS
                   </div>
-                  <div className="flex itemc:\Users\kk199\Downloads\material.pngs-center">
+                  <div className="flex items-center">
                     <img
                       src="./material.png"
                       alt="Material UI"
@@ -215,7 +215,7 @@ const Resume = () => {
                     Bitbucket
                   </div>
                 </div>
-                <div className="card card-shadow-strong d-flex ">
+                <div className="card card-shadow-strong">
                   <div className="flex items-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/0/0e/CI_CD_logo.png"
@@ -272,12 +272,30 @@ const Resume = () => {
               whileHover={{ scale: 1.02 }}
               className="p-4 border rounded-lg shadow-sm mb-2 bg-gray-50"
             >
-              <h3 className="font-medium">Hcl Tech </h3>
+              <h3 className="font-medium">Hcl Tech (Sweden) </h3>
               <p className="text-gray-500 text-sm">
-                Frontend Engineer: Nov 2024 - July 2025
+                Frontend Engineer: [ Nov 2024 - July 2025 ]
               </p>
               <p className="text-gray-700">
-                Work With consumer to build AI governance tool for IKEA
+                <li>
+                  Developed and optimized reusable React components with
+                  TypeScript, integrating Jotai for local state management and
+                  useQuery for data fetching for AI and MlOps products
+                </li>
+                <li>
+                  Worked closely with the AI governance team to deliver
+                  GDPR-compliant features, enhancing user awareness and ensuring
+                  regulatory compliance for AI-based applications
+                </li>
+                <li>
+                  Wrote and maintained react component tests for using vitest,
+                  ensuring high code quality and reliability across features.
+                </li>
+                <li>
+                  Contributed to agile development processes, including sprint
+                  planning, code reviews, and cross-functional team
+                  collaboration.
+                </li>
               </p>
             </motion.div>
           </section>
@@ -326,10 +344,12 @@ const Resume = () => {
                 Software developer (Level - II) [ Dec 2022 - Jan 2023 ]
               </p>
               <p className="text-gray-700">
-                Helped the team with API integration and fixed 5 critical
-                production bugs Successfully completed the knowledge transfer
-                sessions and coached junior developers with onboarding which
-                shot up their productivity by 50%
+                <li>
+                  Helped the team with API integration and fixed 5 critical
+                  production bugs Successfully completed the knowledge transfer
+                  sessions and coached junior developers with onboarding which
+                  shot up their productivity by 50%
+                </li>
               </p>
             </motion.div>
           </section>

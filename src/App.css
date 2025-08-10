@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  color: #222327;
+  background-color: #1b2636;
+  color: #d8d3d3; /* Lighter text color */
   padding: 5rem;
   overflow: auto;
 }
@@ -12,7 +13,7 @@ img {
 }
 
 .card {
-  background-color: #ffffff; /* Or any background color you prefer */
+  background-color: #10152e91; /* Or any background color you prefer */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Internal padding */
   width: 300px; /* Example width, adjust as needed */
