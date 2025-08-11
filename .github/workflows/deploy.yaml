@@ -30,10 +30,10 @@ jobs:
         run: |
           npm run build
 
-      # Deploy to GitHub Pages
+      # Deploy to GitHub Pages (deploy to the gh-pages branch)
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: resume # The branch where the site will be deployed
+          branch: gh-pages # The branch where the site will be deployed (usually `gh-pages`)
           folder: build # The folder containing the production-ready files
           token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
