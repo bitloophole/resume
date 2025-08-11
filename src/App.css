@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  background-color: #1b2636;
-  color: #d8d3d3; /* Lighter text color */
+  color: #1b2636; /* Lighter text color */
   padding: 5rem;
   overflow: auto;
 }
@@ -13,11 +12,12 @@ img {
 }
 
 .card {
-  background-color: #10152e91; /* Or any background color you prefer */
+  background-color: #d3d6e291; /* Or any background color you prefer */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Internal padding */
   width: 300px; /* Example width, adjust as needed */
   margin: 20px; /* Example margin for spacing */
+  justify-items: left;
 }
 
 /* Background Shadow (Box Shadow) */
@@ -34,4 +34,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0; /* Optional: Removes the default padding */
 }

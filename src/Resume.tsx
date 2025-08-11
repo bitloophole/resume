@@ -89,7 +89,7 @@ const Resume = () => {
                       alt="Bootstrap"
                       className="w-6 h-6 mr-2"
                     />
-                    Bootstrap 4
+                    Bootstrap
                   </div>
                   <div className="flex items-center">
                     <img
@@ -99,14 +99,8 @@ const Resume = () => {
                     />
                     SCSS
                   </div>
-                  <div className="flex items-center">
-                    <img
-                      src="./material.png"
-                      alt="Material UI"
-                      className="w-6 h-6 mr-2"
-                    />
-                    Material UI
-                  </div>
+                  <div className="flex items-center">Material UI</div>
+                  <div className="flex items-center">Figma</div>
                 </div>
 
                 <div className="card card-shadow-strong">
@@ -128,19 +122,19 @@ const Resume = () => {
                   </div>
                   <div className="flex items-center">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
-                      alt="Express JS"
-                      className="w-6 h-6 mr-2"
-                    />
-                    Express JS
-                  </div>
-                  <div className="flex items-center">
-                    <img
                       src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                       alt="Node JS"
                       className="w-6 h-6 mr-2"
                     />
                     Node JS
+                  </div>
+                  <div className="flex items-center">
+                    {/* <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                      alt="Express JS"
+                      className="w-6 h-6 mr-2"
+                    /> */}
+                    ExpressJs
                   </div>
                 </div>
                 <div className="card card-shadow-strong">
@@ -165,11 +159,10 @@ const Resume = () => {
                 <div className="card card-shadow-strong">
                   <div className="flex items-center">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/4/47/MongoDB_Logo.svg"
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/MongoDB_Fores-Green.svg/500px-MongoDB_Fores-Green.svg.png"
                       alt="MongoDB"
                       className="w-6 h-6 mr-2"
                     />
-                    MongoDB
                   </div>
                   <div className="flex items-center">
                     <img
@@ -188,15 +181,6 @@ const Resume = () => {
                       alt="Postman"
                       className="w-6 h-6 mr-2"
                     />
-                    Postman
-                  </div>
-                  <div className="flex items-center">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/4/4e/ServiceNow_logo.svg"
-                      alt="ServiceNow"
-                      className="w-6 h-6 mr-2"
-                    />
-                    ServiceNow
                   </div>
                   <div className="flex items-center">
                     <img
@@ -204,26 +188,16 @@ const Resume = () => {
                       alt="Jira"
                       className="w-6 h-6 mr-2"
                     />
-                    Jira
                   </div>
                   <div className="flex items-center">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/0/05/Bitbucket-blue-logomark-only.svg"
+                      src="https://wac-cdn.atlassian.com/misc-assets/adg4-nav/HeaderLogoBitbucket.svg"
                       alt="Bitbucket"
                       className="w-6 h-6 mr-2"
                     />
-                    Bitbucket
                   </div>
                 </div>
                 <div className="card card-shadow-strong">
-                  <div className="flex items-center">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/0/0e/CI_CD_logo.png"
-                      alt="CI/CD Pipeline"
-                      className="w-6 h-6 mr-2"
-                    />
-                    CI/CD Pipeline
-                  </div>
                   <div className="flex items-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
@@ -238,7 +212,6 @@ const Resume = () => {
                       alt="Docker"
                       className="w-6 h-6 mr-2"
                     />
-                    Docker
                   </div>
                   <div className="flex items-center">
                     <img
@@ -246,15 +219,14 @@ const Resume = () => {
                       alt="Azure"
                       className="w-6 h-6 mr-2"
                     />
-                    Azure
                   </div>
                   <div className="flex items-center">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Quay_logo.png"
-                      alt="Quay"
+                      src="https://www.gstatic.com/cloud/images/icons/apple-icon.png"
+                      alt="Google Cloud"
                       className="w-6 h-6 mr-2"
                     />
-                    Quay
+                    GCP
                   </div>
                   <div className="flex items-center">
                     <img
@@ -262,12 +234,11 @@ const Resume = () => {
                       alt="AWS"
                       className="w-6 h-6 mr-2"
                     />
-                    AWS
                   </div>
                 </div>
               </div>
             </motion.ul>
-            <h2 className="text-xl font-semibold mb-2">Experience</h2>
+            <h2 className="text-xl font-semibold mb-2">Experiences</h2>
             <motion.div
               whileHover={{ scale: 1.02 }}
               className="p-4 border rounded-lg shadow-sm mb-2 bg-gray-50"
@@ -277,25 +248,27 @@ const Resume = () => {
                 Frontend Engineer: [ Nov 2024 - July 2025 ]
               </p>
               <p className="text-gray-700">
-                <li>
-                  Developed and optimized reusable React components with
-                  TypeScript, integrating Jotai for local state management and
-                  useQuery for data fetching for AI and MlOps products
-                </li>
-                <li>
-                  Worked closely with the AI governance team to deliver
-                  GDPR-compliant features, enhancing user awareness and ensuring
-                  regulatory compliance for AI-based applications
-                </li>
-                <li>
-                  Wrote and maintained react component tests for using vitest,
-                  ensuring high code quality and reliability across features.
-                </li>
-                <li>
-                  Contributed to agile development processes, including sprint
-                  planning, code reviews, and cross-functional team
-                  collaboration.
-                </li>
+                <ul>
+                  <li>
+                    Developed and optimized reusable React components with
+                    TypeScript, integrating Jotai for local state management and
+                    useQuery for data fetching for AI and MlOps products
+                  </li>
+                  <li>
+                    Worked closely with the AI governance team to deliver
+                    GDPR-compliant features, enhancing user awareness and
+                    ensuring regulatory compliance for AI-based applications
+                  </li>
+                  <li>
+                    Wrote and maintained react component tests for using vitest,
+                    ensuring high code quality and reliability across features.
+                  </li>
+                  <li>
+                    Contributed to agile development processes, including sprint
+                    planning, code reviews, and cross-functional team
+                    collaboration.
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
@@ -309,28 +282,30 @@ const Resume = () => {
                 Front-End developer [ Aug 2023 - Dec 2023 ]
               </p>
               <p className="text-gray-700">
-                <li>
-                  Developed multiple features using function-based react
-                  component, material UI, react-pdf and managed state using
-                  redux toolkit
-                </li>
-                <li>
-                  Integrated RESTful APIs into application using redux thunk
-                  middleware to handle asynchronous actions and worked with the
-                  side effects to maintain a consistent and responsive user
-                  interface
-                </li>
-                <li>
-                  Wrote unit test using Jest for react component and redux thunk
-                  services
-                </li>
-                <li>Worked with the team to deliver the project on time</li>
-                <li>
-                  Participated in enhancing the Bitbucket pipeline for
-                  continuous integration/deployment (CI/CD), facilitating
-                  deployment to AWS Elastic Container Service for the seamless
-                  building and deploying of applications
-                </li>
+                <ul>
+                  <li>
+                    Developed multiple features using function-based react
+                    component, material UI, react-pdf and managed state using
+                    redux toolkit
+                  </li>
+                  <li>
+                    Integrated RESTful APIs into application using redux thunk
+                    middleware to handle asynchronous actions and worked with
+                    the side effects to maintain a consistent and responsive
+                    user interface
+                  </li>
+                  <li>
+                    Wrote unit test using Jest for react component and redux
+                    thunk services
+                  </li>
+                  <li>Worked with the team to deliver the project on time</li>
+                  <li>
+                    Participated in enhancing the Bitbucket pipeline for
+                    continuous integration/deployment (CI/CD), facilitating
+                    deployment to AWS Elastic Container Service for the seamless
+                    building and deploying of applications
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
@@ -344,12 +319,14 @@ const Resume = () => {
                 Software developer (Level - II) [ Dec 2022 - Jan 2023 ]
               </p>
               <p className="text-gray-700">
-                <li>
-                  Helped the team with API integration and fixed 5 critical
-                  production bugs Successfully completed the knowledge transfer
-                  sessions and coached junior developers with onboarding which
-                  shot up their productivity by 50%
-                </li>
+                <ul>
+                  <li>
+                    Helped the team with API integration and fixed 5 critical
+                    production bugs Successfully completed the knowledge
+                    transfer sessions and coached junior developers with
+                    onboarding which shot up their productivity by 50%
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
@@ -358,28 +335,47 @@ const Resume = () => {
               whileHover={{ scale: 1.02 }}
               className="p-4 border rounded-lg shadow-sm mb-2 bg-gray-50"
             >
-              <h3 className="font-medium">Exponential AI, Hyderabad</h3>
+              <h3 className="font-medium">Exponential AI, India</h3>
               <p className="text-gray-500 text-sm">
-                Full stack developer [Mar 2020 - Dec 2022]
+                Full stack developer [ Mar 2020 - Dec 2022 ]
               </p>
               <p className="text-gray-700">
-                • Developed responsive web applications for 5 products using
-                HTML, CSS, TypeScript, and modern JavaScript frameworkslike
-                React and Angular and Syncfusion UI componentsfor 2 of them •
-                Implemented more than 200 RESTful APIs to invoke CRUD operations
-                as per business logic with Express, Node JS, Sequelize ORM,
-                Postgres and MongoDB • Implemented chatbot interface written in
-                Vanilla JS and CSS. It was integrated into the client's website
-                of 3 regions as a plugin which assisted user with quick
-                information • Used Bitbucket as a version control tool and
-                deployed using Azure CI/CD pipeline • Participated in code
-                reviews and mentored junior developers to provide technical
-                guidance and support which decreased the development time by 20%
-                • Enhanced the web application's performance using front-end
-                optimization tools and performance techniques and reduced build
-                time by 25% • Worked in an agile development environment and
-                participated in daily stand-up meetings, sprint planning, and
-                retrospectives
+                <ul>
+                  <li>
+                    Developed responsive web applications for 5 products using
+                    HTML, CSS, TypeScript, and modern JavaScript frameworkslike
+                    React and Angular and Syncfusion UI componentsfor 2 of them
+                  </li>
+                  <li>
+                    Implemented more than 200 RESTful APIs to invoke CRUD
+                    operations as per business logic with Express, Node JS,
+                    Sequelize ORM, Postgres and MongoDB
+                  </li>
+                  <li>
+                    Implemented chatbot interface written in Vanilla JS and CSS.
+                    It was integrated into the client's website of 3 regions as
+                    a plugin which assisted user with quick information
+                  </li>
+                  <li>
+                    Used Bitbucket as a version control tool and deployed using
+                    Azure CI/CD pipeline
+                  </li>
+                  <li>
+                    Participated in code reviews and mentored junior developers
+                    to provide technical guidance and support which decreased
+                    the development time by 20%
+                  </li>
+                  <li>
+                    Enhanced the web application's performance using front-end
+                    optimization tools and performance techniques and reduced
+                    build time by 25%
+                  </li>
+                  <li>
+                    Worked in an agile development environment and participated
+                    in daily stand-up meetings, sprint planning, and
+                    retrospectives
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
@@ -388,24 +384,42 @@ const Resume = () => {
               whileHover={{ scale: 1.02 }}
               className="p-4 border rounded-lg shadow-sm mb-2 bg-gray-50"
             >
-              <h3 className="font-medium">Tata Consultancy Services</h3>
+              <h3 className="font-medium">Tata Consultancy Services, India</h3>
               <p className="text-gray-500 text-sm">
                 Senior Software Developer [ Jun 2019 - Feb 2020 ]
               </p>
               <p className="text-gray-700">
-                • Designed and built 3 single-page applications (SPAs) for user
-                registration portal using Angular, SCSS, and TypeScript and
-                utilized i18n localization • Implementation of reactive and
-                template-driven forms with validation for more than 50 field •
-                Conceptualized and developed HTTP API to integrate service
-                caller with backend server increased system efficiency by 15%
-                and improved usability by 25% • Utilized the Kendo-UI and
-                PrimeFaces UI frameworks to create responsive and user-friendly
-                UI components which compounded development productivity time by
-                30% • Built and deployed the project using Bladelogic and Putty
-                to ensure smooth deployment and server management and maintained
-                source code with Git to collaborate with developers • Supported
-                Quality Assurance team with the bug fixes and resolve issues
+                <ul>
+                  <li>
+                    Designed and built 3 single-page applications (SPAs) for
+                    user registration portal using Angular, SCSS, and TypeScript
+                    and utilized i18n localization
+                  </li>
+                  <li>
+                    Implementation of reactive and template-driven forms with
+                    validation for more than 50 field
+                  </li>
+                  <li>
+                    Conceptualized and developed HTTP API to integrate service
+                    caller with backend server increased system efficiency by
+                    15% and improved usability by 25%
+                  </li>
+                  <li>
+                    Utilized the Kendo-UI and PrimeFaces UI frameworks to create
+                    responsive and user-friendly UI components which compounded
+                    development productivity time by 30%
+                  </li>
+                  <li>
+                    Built and deployed the project using Bladelogic and Putty to
+                    ensure smooth deployment and server management and
+                    maintained source code with Git to collaborate with
+                    developers
+                  </li>
+                  <li>
+                    Supported Quality Assurance team with the bug fixes and
+                    resolve issues
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
@@ -421,12 +435,24 @@ const Resume = () => {
                 Test Engineering Analyst [ May 2016 - Jan 2019 ]
               </p>
               <p className="text-gray-700">
-                • Created and maintained web applications using Angular
-                framework and other web technologies • Collaborated with UI/UX
-                designers to implement responsive and user-friendly designs •
-                Collaborated with back-end developers to integrate front-end
-                applications with server-side APIs • Wrote unit tests to ensure
-                the quality of the applications using jasmine and karma
+                <ul>
+                  <li>
+                    Created and maintained web applications using Angular
+                    framework and other web technologies
+                  </li>
+                  <li>
+                    Collaborated with UI/UX designers to implement responsive
+                    and user-friendly designs
+                  </li>
+                  <li>
+                    Collaborated with back-end developers to integrate front-end
+                    applications with server-side APIs
+                  </li>
+                  <li>
+                    Wrote unit tests to ensure the quality of the applications
+                    using jasmine and karma
+                  </li>
+                </ul>
               </p>
             </motion.div>
           </section>
