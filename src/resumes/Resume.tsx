@@ -126,7 +126,6 @@ const Resume = () => {
                       alt="Node JS"
                       className="w-6 h-6 mr-2"
                     />
-                    Node JS
                   </div>
                   <div className="flex items-center">
                     {/* <img
