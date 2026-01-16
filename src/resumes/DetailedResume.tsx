@@ -4,7 +4,7 @@ type SectionId = "about" | "experience" | "skills" | "education" | "contact";
 
 const DATA = {
   name: "Khushboo Kumari",
-  role: "Frontend Developer / Frontend Engineer",
+  role: "TypeScript/JavaScript Developer",
   location: "Helsingborg, Sweden",
   summary:
     "Frontend Developer with 6+ years of experience building interactive, user friendly, and visually engaging web applications across industries including e-commerce and healthcare. Skilled in modern frontend frameworks such as React and Angular, with strong expertise in HTML, CSS, and JavaScript/TypeScript.",
@@ -12,6 +12,7 @@ const DATA = {
     email: "kk1993114@gmail.com",
     phone: "+46 734 *** ***",
     linkedin: "https://www.linkedin.com/in/kkumari179/",
+    github: "https://github.com/bitloophole",
   },
   experience: [
     {
@@ -27,7 +28,7 @@ const DATA = {
     },
     {
       company: "Ecombooster (Sweden)",
-      title: "Front-End Developer (Internship)",
+      title: "Frontend Developer (Internship)",
       dates: "Aug 2023 – Dec 2023",
       bullets: [
         "Engineered 10+ features using function-based React components, Material UI, and React-PDF, managing complex state with Redux Toolkit to deliver scalable and maintainable user interfaces.",
@@ -36,7 +37,7 @@ const DATA = {
       ],
     },
     {
-      company: "Exponential AI, Hyderabad",
+      company: "Exponential AI, India",
       title: "Full Stack Developer",
       dates: "Mar 2020 – Dec 2022",
       bullets: [
@@ -71,30 +72,33 @@ const DATA = {
   ],
   skills: {
     frameworks: ["React", "Angular", "Node.js", "Express.js"],
-    languages: ["TypeScript", "JavaScript"],
+    languages: ["TypeScript", "JavaScript", "Python"],
     web: [
       "HTML5",
       "CSS3",
-      "Bootstrap 4",
-      "SCSS",
+      "Tailwind CSS",
       "Material UI",
+      "SCSS",
+      "Bootstrap",
       "Skapa",
       "Figma",
     ],
-    databases: ["MongoDB", "Postgres", "Firestore"],
-    tools: ["Postman", "ServiceNow", "Jira", "GitHub"],
-    deployment: ["GitHub Actions", "Kubernetes", "Docker", "AWS", "GCP"],
+    databases: ["Firestore", "Postgres", "MongoDB", "MySQL"],
+    tools: ["Jira", "GitHub", "Postman", "ServiceNow"],
+    deployment: ["AWS", "GCP", "Kubernetes", "Docker", "GitHub Actions"],
   },
   education: [
     {
       degree: "Bachelor of Technology in Computer Science and Engineering",
-      school: "Kalinga Institute of Industrial Technology, Bhubaneshwar",
+      school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
       year: "2012 – 2016",
+      url: "https://kiit.ac.in/",
     },
     {
       degree: "Master’s in Computer Science: Applied Data Science",
       school: "Malmö University, Sweden",
       year: "2024 – 2026 (expected)",
+      url: "https://mau.se/",
     },
   ],
 };
@@ -256,6 +260,7 @@ export function DetailedResume() {
       </header>
 
       <main className="relative mx-auto max-w-5xl px-4 py-10">
+        {/* Hero section */}
         <div className="mb-10 rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)] sm:p-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-start gap-5">
@@ -309,6 +314,14 @@ export function DetailedResume() {
               rel="noreferrer"
             >
               LinkedIn
+            </a>
+            <a
+              className="underline underline-offset-4 hover:text-white"
+              href={DATA.links.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
             </a>
             <a
               className="underline underline-offset-4 hover:text-white"
@@ -371,8 +384,17 @@ export function DetailedResume() {
               {DATA.education.map((e) => (
                 <Card key={`${e.school}-${e.degree}`}>
                   <p className="font-semibold">{e.degree}</p>
-                  <p className="text-sm text-white/70">
-                    {e.school} · {e.year}
+
+                  <p className="mt-1 text-sm text-white/70">
+                    <a
+                      href={e.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-4 hover:text-white transition"
+                    >
+                      {e.school}
+                    </a>{" "}
+                    · {e.year}
                   </p>
                 </Card>
               ))}
